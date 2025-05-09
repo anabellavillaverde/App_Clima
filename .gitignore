@@ -1,0 +1,15 @@
+# Ignorar entorno virtual
+.enviroment/
+enviroment/
+
+# Archivos de Python compilados
+pycache/
+*.py[cod]
+*.pyo
+
+# Archivos de entorno
+.env
+.venv/
+env/
+venv/
+ENV/
