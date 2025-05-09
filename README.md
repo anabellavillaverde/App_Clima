@@ -1,6 +1,7 @@
-Practico 1: App_Clima
+## Practico 1: App_Clima
 
-Integrantes:
+### Integrantes:
+
 Roy Scheurer
 Valentina Alaniz
 Ana Villaverde
