@@ -1,0 +1,12 @@
+{% extends "layout.html" %} <!-- estructura base de layout.html-->
+
+{% block contenido %} <!--contenido-->
+    <h2>Selecciona una ciudad:</h2>
+    <ul>
+        {% for ciudad in ciudades %} <!-- bucle de Jinja2 que recorre la lista o diccionario de ciudades-->
+            <li>
+                <a href="{{ url_for('clima') }}?ciudad={{ ciudad }}">{{ ciudad }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
