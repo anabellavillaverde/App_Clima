@@ -1,4 +1,4 @@
-<!--  muestra el clima de la ciudad elegida -->
+<!-- clima.html -->
 {% extends "layout.html" %}
 
 {% block title %}
@@ -6,11 +6,39 @@
 {% endblock %} 
 
 {% block contenido %}
-    <h2>Clima actual en {{ ciudad }}</h2>
-    <ul>
-        <li>Temperatura: {{ clima.temperature }} °C</li>
-        <li>Viento: {{ clima.windspeed }} km/h</li>
-        <li>Hora: {{ clima.time }}</li>
-    </ul>
-    <a href="/"> Volver al inicio</a> 
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card shadow-lg border-0">
+                <div class="card-body p-4">
+                    <h2 class="card-title text-center mb-4 display-6">
+                        🌤️ Clima actual en <span class="text-primary">{{ ciudad }}</span>
+                    </h2>
+                    
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item">
+                            <i class="bi bi-thermometer-half me-2 text-danger"></i>
+                            <strong>Temperatura:</strong> {{ clima.temperature }} °C
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-wind me-2 text-info"></i>
+                            <strong>Viento:</strong> {{ clima.windspeed }} km/h
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-clock me-2 text-secondary"></i>
+                            <strong>Hora:</strong> {{ clima.time }}
+                        </li>
+                    </ul>
+
+                    <div class="text-center">
+                        <a href="/" class="btn btn-outline-primary">
+                            ⬅️ Volver al inicio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
+

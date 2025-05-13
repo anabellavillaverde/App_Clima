@@ -1,8 +1,19 @@
 footer p{
     text-align: end;
+    margin: 2mm;
+    margin-top: -12px;
     font-size: smaller;
 }
 
-h1{
+body{
+    margin: 3mm;
+    font-family: sans-serif;
+}
+
+header h1 {
     text-align: center;
+    margin: 6mm;
+    margin-top: 0px;
+    /* background-color: blue; */
+    font-family: Lütschine Font Mega Family ;
 }
